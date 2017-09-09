@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Random = System.Random;
 
 namespace HK.Soramimi
 {
@@ -12,9 +12,9 @@ namespace HK.Soramimi
             var random = new Random();
             var result = new StringBuilder();
             var useDatabase = new List<Database.Data>();
-            for (int i = 0; i < text.Length;)
+            for (var i = 0; i < text.Length;)
             {
-                for (int k = 1; k <= text.Length - i; ++k)
+                for (var k = 1; k <= text.Length - i; ++k)
                 {
                     var target = text.Substring(i, k);
                     var findDatabase = database.Get.Where(d => d.Key == target);
