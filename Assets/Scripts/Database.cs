@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace HK.Soramimi
@@ -14,6 +15,7 @@ namespace HK.Soramimi
             get { return this.database; }
         }
         
+        [Serializable]
         public class Data
         {
             [SerializeField]
