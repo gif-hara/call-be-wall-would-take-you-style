@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace HK.SoramimiSystem
+namespace HK.Soramimi
 {
     [CreateAssetMenu()]
     public sealed class Database : ScriptableObject

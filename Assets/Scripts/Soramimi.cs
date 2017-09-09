@@ -1,8 +1,8 @@
-﻿namespace HK.SoramimiSystem
+﻿namespace HK.Soramimi
 {
-    public sealed class Soramimi
+    public static class Soramimi
     {
-        public string Translate(string text, Database database)
+        public static string Translate(string text, Database database)
         {
             return text;
         }
